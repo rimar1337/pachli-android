@@ -11,3 +11,9 @@ profile-out
 profile-out-*
 app/release
 app-release.apk
+checks/bin/main/app/pachli/lint/checks
+plugins/markdown2resource/bin/main/app/pachli/plugins/markdown2resource/Markdown2ResourcePlugin.kt
+tools/mklanguages/bin/main/app/pachli/mklanguages/Main.kt
+tools/mklanguages/bin/main/app/pachli/mklanguages/ValuesParser.kt
+tools/mklanguages/bin/test
+checks/bin/test/app/pachli/lint/checks/AndroidxToolbarDetectorTest.kt
