@@ -32,14 +32,14 @@
 
     <dimen name="selected_drag_item_elevation">12dp</dimen>
 
-    <dimen name="avatar_radius_94dp">11.75dp</dimen> <!-- 1/8 of 100dp - 2 * 3dp padding -->
-    <dimen name="avatar_radius_80dp">10dp</dimen> <!-- 1/8 of 80dp -->
-    <dimen name="avatar_radius_48dp">6dp</dimen> <!-- 1/8 of 48dp -->
-    <dimen name="avatar_radius_42dp">5.25dp</dimen> <!-- 1/8 of 42dp -->
-    <dimen name="avatar_radius_36dp">4.5dp</dimen> <!-- 1/8 of 36dp -->
-    <dimen name="avatar_radius_24dp">3dp</dimen> <!-- 1/8 of 24dp -->
+    <dimen name="avatar_radius_94dp">9999dp</dimen> <!-- 1/8 of 100dp - 2 * 3dp padding -->
+    <dimen name="avatar_radius_80dp">9999dp</dimen> <!-- 1/8 of 80dp -->
+    <dimen name="avatar_radius_48dp">9999dp</dimen> <!-- 1/8 of 48dp -->
+    <dimen name="avatar_radius_42dp">9999dp</dimen> <!-- 1/8 of 42dp -->
+    <dimen name="avatar_radius_36dp">9999dp</dimen> <!-- 1/8 of 36dp -->
+    <dimen name="avatar_radius_24dp">9999dp</dimen> <!-- 1/8 of 24dp -->
     <dimen name="min_report_button_width">160dp</dimen>
-    <dimen name="account_avatar_background_radius">14dp</dimen>
+    <dimen name="account_avatar_background_radius">9999dp</dimen>
 
 
     <dimen name="card_radius">5dp</dimen>

@@ -195,6 +195,7 @@
                         android:layout_marginTop="16dp"
                         android:visibility="gone"
                         app:layout_constraintTop_toBottomOf="@id/labelBarrier"
+                        tools:layout_editor_absoluteX="16dp"
                         tools:visibility="visible">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -203,7 +204,8 @@
                             android:background="?colorSecondaryContainer"
                             android:color="?colorOnSecondaryContainer"
                             android:hint="@string/account_note_hint"
-                            android:textDirection="firstStrong" />
+                            android:textDirection="firstStrong"
+                            tools:visibility="gone" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -215,7 +217,8 @@
                         android:textColor="?colorAccent"
                         android:visibility="gone"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/accountNoteTextInputLayout" />
+                        app:layout_constraintTop_toBottomOf="@id/accountNoteTextInputLayout"
+                        tools:visibility="gone" />
 
                     <app.pachli.view.ClickableSpanTextView
                         android:id="@+id/accountNoteTextView"
@@ -237,6 +240,7 @@
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@id/accountNoteTextView"
                         tools:itemCount="2"
+                        tools:layout_editor_absoluteX="16dp"
                         tools:listitem="@layout/item_account_field" />
 
                     <TextView
@@ -337,10 +341,10 @@
                         android:id="@+id/accountStatuses"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toStartOf="@id/accountFollowing"
+                        android:orientation="horizontal"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/accountMovedView">
 
@@ -348,7 +352,8 @@
                             android:id="@+id/accountStatusesTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:fontFamily="sans-serif-medium"
                             android:textSize="?attr/status_text_medium"
                             android:textColor="?colorOnPrimaryContainer"
@@ -357,6 +362,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:paddingBottom="6dp"
                             android:text="@string/title_posts"
                             android:textColor="?colorOnPrimaryContainer"
@@ -368,18 +376,21 @@
                         android:id="@+id/accountFollowing"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:gravity="center_horizontal"
-                        android:orientation="vertical"
+                        android:orientation="horizontal"
                         app:layout_constraintEnd_toStartOf="@id/accountFollowers"
-                        app:layout_constraintStart_toEndOf="@id/accountStatuses"
+                        app:layout_constraintStart_toEndOf="@+id/accountStatuses"
                         app:layout_constraintTop_toBottomOf="@id/accountMovedView">
 
                         <TextView
                             android:id="@+id/accountFollowingTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:fontFamily="sans-serif-medium"
                             android:textSize="?attr/status_text_medium"
                             android:textColor="?colorOnPrimaryContainer"
@@ -388,6 +399,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:paddingBottom="6dp"
                             android:text="@string/title_follows"
                             android:textColor="?colorOnPrimaryContainer"
@@ -398,10 +412,11 @@
                         android:id="@+id/accountFollowers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
                         app:layout_constraintStart_toEndOf="@id/accountFollowing"
                         app:layout_constraintTop_toBottomOf="@id/accountMovedView">
 
@@ -409,7 +424,8 @@
                             android:id="@+id/accountFollowersTextView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:fontFamily="sans-serif-medium"
                             android:textColor="?colorOnPrimaryContainer"
                             android:textSize="?attr/status_text_medium"
@@ -418,6 +434,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
                             android:paddingBottom="6dp"
                             android:text="@string/title_followers"
                             android:textColor="?colorOnPrimaryContainer"

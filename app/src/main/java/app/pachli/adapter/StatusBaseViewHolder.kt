@@ -299,7 +299,7 @@ abstract class StatusBaseViewHolder protected constructor(itemView: View) :
             avatarRadius = avatarRadius48dp
         } else {
             val padding = Utils.dpToPx(context, 12)
-            avatar.setPaddingRelative(0, 0, padding, padding)
+            avatar.setPaddingRelative(0, 0, 0, 0);
             avatarInset.visibility = View.VISIBLE
             avatarInset.background = null
             loadAvatar(
