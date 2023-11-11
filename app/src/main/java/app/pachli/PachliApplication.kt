@@ -34,6 +34,7 @@ import app.pachli.util.setAppNightMode
 import app.pachli.worker.PruneCacheWorker
 import app.pachli.worker.WorkerFactory
 import autodispose2.AutoDisposePlugins
+import com.google.android.material.color.DynamicColors
 import dagger.hilt.android.HiltAndroidApp
 import de.c1710.filemojicompat_defaults.DefaultEmojiPackList
 import de.c1710.filemojicompat_ui.helpers.EmojiPackHelper
@@ -67,6 +68,8 @@ class PachliApplication : Application() {
 //                    .penaltyLog()
 //                    .build())
 //        }
+
+
         super.onCreate()
 
         Security.insertProviderAt(Conscrypt.newProvider(), 1)
@@ -114,6 +117,8 @@ class PachliApplication : Application() {
             ExistingPeriodicWorkPolicy.KEEP,
             pruneCacheWorker,
         )
+        // Apply dynamic color
+        DynamicColors.applyToActivitiesIfAvailable(this)
     }
 
     private fun upgradeSharedPreferences(oldVersion: Int, newVersion: Int) {

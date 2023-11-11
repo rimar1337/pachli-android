@@ -105,7 +105,8 @@
     </style>
 
     <style name="AppImageButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="android:tint">@color/colortextisnice</item>
+        <item name="android:tint">?android:textColorTertiary</item>
+        <item name="android:alpha">0.5</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
 
@@ -133,19 +134,19 @@
     </style>
 
     <!--Black Application Theme Styles-->
-    <style name="Base.Theme.Black" parent="Theme.Pachli">
-        <item name="colorPrimaryDark">@color/tusky_grey_05</item>
+    <style name="BlackOverlay" >
+        <item name="colorPrimaryDark">@color/black</item>
 
         <item name="android:colorBackground">@color/black</item>
         <item name="windowBackgroundColor">@color/black</item>
 
-        <item name="colorSurface">@color/tusky_grey_10</item>
+        <item name="colorSurface">@color/black</item>
 
         <!-- TODO: Remove this, use colorControlNormal everywhere instead of iconColor -->
         <item name="iconColor">?attr/colorControlNormal</item>
     </style>
 
-    <style name="Theme.Pachli.Black" parent="Base.Theme.Black" />
+    <style name="Theme.Pachli.Black" parent="BlackOverlay" />
 
     <!-- customize the shape of the avatars in account selection list -->
     <style name="BezelImageView">

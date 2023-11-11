@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colortextisnice">@color/tusky_grey_50</color>
+    <color name="colortextisnice">@color/md_theme_dark_secondaryContainer</color>
     <color name="textColorDisabled">@color/tusky_grey_40</color>
 
     <color name="favoriteButtonActiveColor">@color/tusky_orange</color>

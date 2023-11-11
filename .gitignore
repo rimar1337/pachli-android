@@ -17,3 +17,4 @@ tools/mklanguages/bin/main/app/pachli/mklanguages/Main.kt
 tools/mklanguages/bin/main/app/pachli/mklanguages/ValuesParser.kt
 tools/mklanguages/bin/test
 checks/bin/test/app/pachli/lint/checks/AndroidxToolbarDetectorTest.kt
+app/orangeGithub/release
