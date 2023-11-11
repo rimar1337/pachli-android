@@ -68,7 +68,7 @@
         android:importantForAccessibility="no"
         android:maxLines="1"
         android:textColor="?android:textColorTertiary"
-        android:alpha="0.5"
+        android:alpha="0.68"
         android:textSize="?attr/status_text_medium"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="@id/status_avatar"

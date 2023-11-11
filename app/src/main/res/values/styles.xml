@@ -106,7 +106,7 @@
 
     <style name="AppImageButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:tint">?android:textColorTertiary</item>
-        <item name="android:alpha">0.5</item>
+        <item name="android:alpha">0.68</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
 
