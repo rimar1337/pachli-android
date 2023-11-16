@@ -30,6 +30,7 @@ import androidx.annotation.StringRes
 import androidx.annotation.StyleRes
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import app.pachli.MainActivity.Companion.redirectIntent
@@ -87,6 +88,7 @@ abstract class BaseActivity : AppCompatActivity() {
         val theme = sharedPreferencesRepository.getString(APP_THEME, APP_THEME_DEFAULT)
         Timber.d("activeTheme: %s", theme)
         if (theme == THEME_BLACK) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             setTheme(R.style.Theme_Pachli_Black)
         }
 
